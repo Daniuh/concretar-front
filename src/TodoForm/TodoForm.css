@@ -17,6 +17,10 @@ label {
   margin-bottom: 26px;
 }
 
+span {
+  color: #000000;
+}
+
 textarea {
   background-color: #F9FBFC;
   border: 2px solid #202329;

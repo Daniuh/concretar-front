@@ -38,17 +38,25 @@ function TodoProvider(props) {
   };
 
   const completeTodo = (text) => {
-    const todoIndex = todos.findIndex(todo => todo.text === text);
+    if(window.confirm("¿Seguro que completo la tarea?")){
+      const todoIndex = todos.findIndex(todo => todo.text === text);
     const newTodos = [...todos];
     newTodos[todoIndex].completed = true;
     saveTodos(newTodos);
+    }else {
+      alert("Chale, pensamos que si")
+    }
   };
 
   const deleteTodo = (text) => {
+    if(window.confirm("¿Seguro que quieres eliminar la tarea?")){
     const todoIndex = todos.findIndex(todo => todo.text === text);
     const newTodos = [...todos];
     newTodos.splice(todoIndex, 1);
     saveTodos(newTodos);
+    }else{
+      alert("Por poquito...")
+    }
   };
   
   return (
