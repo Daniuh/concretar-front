@@ -9,7 +9,7 @@
   text-align: center;
   font-family: 'Montserrat';
   font-weight: 400;
-  color: #000000;
+  color: #ffffff;
   box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.25);
   display: flex;
   margin: auto;
@@ -17,7 +17,7 @@
 }
 
 .TodoSearch::placeholder {
-  color: #000000;
+  color: #ffffff;
   font-family: 'Montserrat';
   font-weight: 400;
   font-family: cursive;
